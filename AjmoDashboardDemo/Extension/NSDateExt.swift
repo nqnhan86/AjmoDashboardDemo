@@ -31,9 +31,10 @@ extension Date {
     /**
      format NSDate to String formatted "HH:mm - dd/MM/yyyy". Pass another format string to change format
      */
-    func formatDateTime(_ format: String = "HH:mm - dd/MM/yyyy") -> String {
+    func formatDateTime(_ format: String = "HH:mm - dd/MM/yyyy", timeZone: String = "GMT") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
+        dateFormatter.timeZone = TimeZone(abbreviation: timeZone)
         return dateFormatter.string(from: self)
     }
 

@@ -20,7 +20,6 @@ extension UITableView {
 
 
 extension UIScrollView {
-    
     func animateHeaderView(staticView: UIView, animatedView: UIView) {
         
         var headerTransform = CATransform3DIdentity
@@ -35,7 +34,6 @@ extension UIScrollView {
             animatedView.layer.transform = headerTransform
         }
     }
-    
 }
 
 
@@ -125,6 +123,17 @@ extension UIView {
         for view in subviews {
             view.removeFromSuperview()
         }
+    }
+    
+    func addGradientLayer(with color: UIColor) {
+        let mask = CAGradientLayer()
+        mask.startPoint = CGPoint(x: 1.0, y: 1.0)
+        mask.endPoint = CGPoint(x: 1.0, y: 0.0)
+        mask.colors = [color.withAlphaComponent(1.0).cgColor, color.withAlphaComponent(0.0).cgColor]
+        mask.locations = [0.0,1.0]
+        mask.frame = self.bounds
+        mask.masksToBounds = true
+        self.layer.addSublayer(mask)
     }
 }
 

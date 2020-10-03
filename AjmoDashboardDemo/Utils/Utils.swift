@@ -57,7 +57,7 @@ class Utils {
             return name
         }
         
-        return "GC Ranch"
+        return "AjmoDashboardDemo"
     }
     
     static var appVersion : String {
@@ -71,28 +71,11 @@ class Utils {
         return "Verion 1.0 build 0"
     }
     
-    static func fishHarvestedStandards() -> [Float: String] {
-        let lengthStr = "10.0,10.5,11,11.5,12,12.5,13,13.5,14,14.5,15,15.5,16,16.5,17,17.5,18,18.5,19,19.5,20,20.5,21,21.5,22,22.5,23,23.5,24,24.5,25,25.5,26,26.5,27,27.5,28"
-        let weightStr = "0.5,0.6,0.7,0.8,0.9,1,1.1,1.3,1.5,1.6,1.8,2,2.2,2.5,2.7,3,3.2,3.5,3.9,4.2,4.5,4.9,5.3,5.7,6.2,6.6,7.1,7.6,8.1,8.7,9.3,9.9,10.4,10.9,11.5,12.0,12.6"
-        
-        let arrKeys = lengthStr.splitString(",")
-        let values = weightStr.splitString(",")
-        
-        var dic = [Float: String]()
-        
-        for i in 0..<arrKeys.count{
-            let key = Float(arrKeys[i]) ?? 10
-            let value = values[i]
-            dic.updateValue(value, forKey: key)
-        }
-        
-        return dic
-    }
-    
     
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = Constants.dateFormat
+        formatter.timeZone = TimeZone(abbreviation: "GMT")
+        formatter.dateFormat = Constants.DATE_FORMAT
         return formatter
     }()
     
@@ -192,31 +175,10 @@ class Utils {
         return  attachmentStr
     }
     
-    static func setupMailComposer(with data: Data? = nil, fileName: String? = nil, in viewController: UIViewController, mimeType: String? = nil, subject: String, messageBody: String) -> MFMailComposeViewController?{
-        if MFMailComposeViewController.canSendMail() {
-            let mailComposerVC = MFMailComposeViewController()
-            
-            if let data = data {
-                mailComposerVC.addAttachmentData(data, mimeType: mimeType ?? "", fileName:fileName ?? "")
-            }
-            
-            mailComposerVC.setSubject(subject)
-            mailComposerVC.setMessageBody(messageBody,isHTML: false)
-            viewController.present(mailComposerVC, animated: true, completion: nil)
-            return mailComposerVC
-        }
-        else
-        {
-            Utils.alertViewIn(vc: viewController,
-                              message: "Your device could not send e-mail.  Please check e-mail configuration and try again.",
-                              cancelButton: "OK")
-            
-            return nil
-        }
-    }
     
     
-    static func alertViewIn(vc: UIViewController, title: String? = nil, message: String, cancelButton: String, otherButton: [String]? = nil, buttonClickedHandler: ((Int) -> Void)? = nil) {
+    // ALERT UTILS
+    static func showAlert(in vc: UIViewController? = nil, title: String? = nil, message: String, cancelButton: String, otherButton: [String]? = nil, buttonClickedHandler: ((Int) -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         if let arrayButton = otherButton {
@@ -234,7 +196,14 @@ class Utils {
             }
         }))
         
-        vc.present(alert, animated: true, completion: nil)
+        if let vc = vc {
+            vc.present(alert, animated: true, completion: nil)
+        }
+        else {
+            if let topVC = UIApplication.topViewController() {
+                topVC.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     static func actionSheetIn(vc: UIViewController, title: String? = nil, cancelButton: String, message: String? = nil, otherButton: [String]? = nil, buttonClickedHandler: ((Int) -> Void)? = nil) {

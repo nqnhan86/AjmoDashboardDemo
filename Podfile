@@ -8,4 +8,5 @@ target 'AjmoDashboardDemo' do
   pod 'Alamofire'
   pod 'Mantle'
   pod 'iCarousel'
+  pod 'SDWebImage'
 end

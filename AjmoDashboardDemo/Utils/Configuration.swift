@@ -9,5 +9,5 @@
 import UIKit
 
 struct Configuration {
-    static let API_BASE_URL: String = "http://dev.wastelinq.com:9797/api"
+    static let GET_TODAY_EVENTS_URL: String = "https://api.ajmo.hr/v3/event/dashboard"
 }

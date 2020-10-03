@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.2.2)
+  - iCarousel (1.8.3)
+  - IQKeyboardManagerSwift (6.0.5)
+  - Mantle (2.1.1):
+    - Mantle/extobjc (= 2.1.1)
+  - Mantle/extobjc (2.1.1)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - iCarousel
+  - IQKeyboardManagerSwift (~> 6.0.4)
+  - Mantle
+  - MBProgressHUD (~> 1.0.0)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - iCarousel
+    - IQKeyboardManagerSwift
+    - Mantle
+    - MBProgressHUD
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+
+PODFILE CHECKSUM: 4d0cfac6a5ec5b50765c8be1a3164c2c5e6878b7
+
+COCOAPODS: 1.9.3

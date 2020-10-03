@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="292" id="KGk-i7-Jjw" customClass="TodayCardViewCell" customModule="AjmoDashboardDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrA-2A-5H0" customClass="iCarousel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="fLL-sv-3iK"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="jc1-qQ-qKw"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SrA-2A-5H0" secondAttribute="bottom" id="6i5-ww-DjU"/>
+                    <constraint firstItem="SrA-2A-5H0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KPH-CC-MCd"/>
+                    <constraint firstItem="SrA-2A-5H0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fDW-zG-epw"/>
+                    <constraint firstAttribute="trailing" secondItem="SrA-2A-5H0" secondAttribute="trailing" id="w7j-LT-tgZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="vwCard" destination="SrA-2A-5H0" id="Uzn-K2-1zR"/>
+            </connections>
+            <point key="canvasLocation" x="0.7246376811594204" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+</document>

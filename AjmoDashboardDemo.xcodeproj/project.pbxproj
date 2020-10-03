@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8B53E7D01DCF0801F7BB31E3 /* Pods_AjmoDashboardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1684502CFE0A6E72BEBDC7E /* Pods_AjmoDashboardDemo.framework */; };
+		D7743DCA25283BA800F7C852 /* AjmoTodayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DC925283BA800F7C852 /* AjmoTodayModel.swift */; };
+		D7743DCE2528424200F7C852 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DCD2528424200F7C852 /* BaseModel.swift */; };
+		D7743DD7252877F900F7C852 /* TodayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DD6252877F900F7C852 /* TodayHeaderView.swift */; };
+		D7743DD92528781600F7C852 /* TodayHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7743DD82528781600F7C852 /* TodayHeaderView.xib */; };
+		D7743DDF25288E9A00F7C852 /* TodayCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DDD25288E9A00F7C852 /* TodayCardViewCell.swift */; };
+		D7743DE025288E9A00F7C852 /* TodayCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */; };
+		D7743DE225288FF900F7C852 /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DE125288FF900F7C852 /* TodayCardView.swift */; };
+		D7743DE42528900F00F7C852 /* TodayCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7743DE32528900F00F7C852 /* TodayCardView.xib */; };
 		D7BACE532524593E006F70DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE522524593E006F70DC /* AppDelegate.swift */; };
-		D7BACE572524593E006F70DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE562524593E006F70DC /* BaseViewController.swift */; };
+		D7BACE572524593E006F70DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE562524593E006F70DC /* MainViewController.swift */; };
 		D7BACE5A2524593E006F70DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE582524593E006F70DC /* Main.storyboard */; };
 		D7BACE5C25245941006F70DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE5B25245941006F70DC /* Assets.xcassets */; };
 		D7BACE5F25245941006F70DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE5D25245941006F70DC /* LaunchScreen.storyboard */; };
@@ -32,9 +40,17 @@
 		7234039E953E675BAC04E505 /* Pods-AjmoDashboardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AjmoDashboardDemo.release.xcconfig"; path = "Target Support Files/Pods-AjmoDashboardDemo/Pods-AjmoDashboardDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C6DB447F4B106BA4CC523C69 /* Pods-AjmoDashboardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AjmoDashboardDemo.debug.xcconfig"; path = "Target Support Files/Pods-AjmoDashboardDemo/Pods-AjmoDashboardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D1684502CFE0A6E72BEBDC7E /* Pods_AjmoDashboardDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AjmoDashboardDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7743DC925283BA800F7C852 /* AjmoTodayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjmoTodayModel.swift; sourceTree = "<group>"; };
+		D7743DCD2528424200F7C852 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		D7743DD6252877F900F7C852 /* TodayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeaderView.swift; sourceTree = "<group>"; };
+		D7743DD82528781600F7C852 /* TodayHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayHeaderView.xib; sourceTree = "<group>"; };
+		D7743DDD25288E9A00F7C852 /* TodayCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardViewCell.swift; sourceTree = "<group>"; };
+		D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayCardViewCell.xib; sourceTree = "<group>"; };
+		D7743DE125288FF900F7C852 /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
+		D7743DE32528900F00F7C852 /* TodayCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayCardView.xib; sourceTree = "<group>"; };
 		D7BACE4F2524593E006F70DC /* AjmoDashboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AjmoDashboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BACE522524593E006F70DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7BACE562524593E006F70DC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D7BACE562524593E006F70DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D7BACE592524593E006F70DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7BACE5B25245941006F70DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7BACE5E25245941006F70DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +99,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D7743DC825283B6B00F7C852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7743DCD2528424200F7C852 /* BaseModel.swift */,
+				D7743DC925283BA800F7C852 /* AjmoTodayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7743DCF2528720F00F7C852 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7BACE562524593E006F70DC /* MainViewController.swift */,
+				D7743DDD25288E9A00F7C852 /* TodayCardViewCell.swift */,
+				D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D7743DD02528726800F7C852 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D7BACE522524593E006F70DC /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D7743DD12528729200F7C852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7BACE582524593E006F70DC /* Main.storyboard */,
+				D7BACE5B25245941006F70DC /* Assets.xcassets */,
+				D7BACE5D25245941006F70DC /* LaunchScreen.storyboard */,
+				D7BACE6025245941006F70DC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D7BACE462524593E006F70DC = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +158,14 @@
 		D7BACE512524593E006F70DC /* AjmoDashboardDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D7BACE6B25245CD3006F70DC /* Generic */,
+				D7743DC825283B6B00F7C852 /* Models */,
+				D7743DD02528726800F7C852 /* AppDelegate */,
+				D7743DCF2528720F00F7C852 /* ViewControllers */,
+				D7BACE672524598B006F70DC /* CustomViews */,
 				D7BACE7425245E5D006F70DC /* Extension */,
 				D7BACE7B25245E5E006F70DC /* Utils */,
-				D7BACE672524598B006F70DC /* CustomViews */,
 				D7BACE69252459A2006F70DC /* Manager */,
-				D7BACE6A25245A29006F70DC /* SupportedFiles */,
+				D7743DD12528729200F7C852 /* Supporting Files */,
 			);
 			path = AjmoDashboardDemo;
 			sourceTree = "<group>";
@@ -117,6 +173,10 @@
 		D7BACE672524598B006F70DC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7743DD6252877F900F7C852 /* TodayHeaderView.swift */,
+				D7743DD82528781600F7C852 /* TodayHeaderView.xib */,
+				D7743DE125288FF900F7C852 /* TodayCardView.swift */,
+				D7743DE32528900F00F7C852 /* TodayCardView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -131,26 +191,6 @@
 				D7BACE6C25245CE9006F70DC /* SceneManager.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		D7BACE6A25245A29006F70DC /* SupportedFiles */ = {
-			isa = PBXGroup;
-			children = (
-				D7BACE582524593E006F70DC /* Main.storyboard */,
-				D7BACE5B25245941006F70DC /* Assets.xcassets */,
-				D7BACE5D25245941006F70DC /* LaunchScreen.storyboard */,
-				D7BACE6025245941006F70DC /* Info.plist */,
-			);
-			name = SupportedFiles;
-			sourceTree = "<group>";
-		};
-		D7BACE6B25245CD3006F70DC /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-				D7BACE522524593E006F70DC /* AppDelegate.swift */,
-				D7BACE562524593E006F70DC /* BaseViewController.swift */,
-			);
-			name = Generic;
 			sourceTree = "<group>";
 		};
 		D7BACE7425245E5D006F70DC /* Extension */ = {
@@ -235,8 +275,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7743DD92528781600F7C852 /* TodayHeaderView.xib in Resources */,
 				D7BACE5F25245941006F70DC /* LaunchScreen.storyboard in Resources */,
+				D7743DE42528900F00F7C852 /* TodayCardView.xib in Resources */,
 				D7BACE5C25245941006F70DC /* Assets.xcassets in Resources */,
+				D7743DE025288E9A00F7C852 /* TodayCardViewCell.xib in Resources */,
 				D7BACE5A2524593E006F70DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,19 +335,24 @@
 			files = (
 				D7BACE8025245E5E006F70DC /* UIViewExt.swift in Sources */,
 				D7BACE8725245E5E006F70DC /* Configuration.swift in Sources */,
-				D7BACE572524593E006F70DC /* BaseViewController.swift in Sources */,
+				D7743DCA25283BA800F7C852 /* AjmoTodayModel.swift in Sources */,
+				D7BACE572524593E006F70DC /* MainViewController.swift in Sources */,
 				D7BACE8125245E5E006F70DC /* UIViewControllerExt.swift in Sources */,
 				D7BACE8325245E5E006F70DC /* NSDateExt.swift in Sources */,
 				D7BACE8625245E5E006F70DC /* Utils.swift in Sources */,
 				D7BACE7225245CE9006F70DC /* ColorManager.swift in Sources */,
 				D7BACE7025245CE9006F70DC /* SceneManager.swift in Sources */,
+				D7743DE225288FF900F7C852 /* TodayCardView.swift in Sources */,
 				D7BACE532524593E006F70DC /* AppDelegate.swift in Sources */,
 				D7BACE7F25245E5E006F70DC /* StringExt.swift in Sources */,
+				D7743DCE2528424200F7C852 /* BaseModel.swift in Sources */,
 				D7BACE8A25246710006F70DC /* ApiManager.swift in Sources */,
 				D7BACE7125245CE9006F70DC /* AlertViewManager.swift in Sources */,
+				D7743DD7252877F900F7C852 /* TodayHeaderView.swift in Sources */,
 				D7BACE8B25246710006F70DC /* NetworkManager.swift in Sources */,
 				D7BACE8425245E5E006F70DC /* UIImageExt.swift in Sources */,
 				D7BACE8525245E5E006F70DC /* Constants.swift in Sources */,
+				D7743DDF25288E9A00F7C852 /* TodayCardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AjmoDashboardDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AjmoDashboardDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AjmoDashboardDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AjmoDashboardDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
