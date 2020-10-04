@@ -9,4 +9,5 @@ target 'AjmoDashboardDemo' do
   pod 'Mantle'
   pod 'iCarousel'
   pod 'SDWebImage'
+  pod 'ParallaxHeader', '~> 3.0.0'
 end

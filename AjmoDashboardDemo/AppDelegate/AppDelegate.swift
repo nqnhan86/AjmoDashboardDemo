@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         IQKeyboardManager.shared.enable = true
+        
+        let rootVC = Utils.controllerFromStoryboard("Main", id: "MainViewController")
+        let nav : UINavigationController = UINavigationController(rootViewController: rootVC)
+        self.window?.rootViewController = nav
+        self.window?.makeKeyAndVisible()
+        
+        Utils.customizeNavigationBarAppearance()
+        Utils.customizeStatusBarColor()
         
         return true
     }

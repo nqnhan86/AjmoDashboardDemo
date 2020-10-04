@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8B53E7D01DCF0801F7BB31E3 /* Pods_AjmoDashboardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1684502CFE0A6E72BEBDC7E /* Pods_AjmoDashboardDemo.framework */; };
+		D74E0B3625295E310090B2C1 /* DiscoverHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E0B3525295E310090B2C1 /* DiscoverHeaderView.swift */; };
+		D74E0B3825295E460090B2C1 /* DiscoverHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74E0B3725295E460090B2C1 /* DiscoverHeaderView.xib */; };
+		D773157E2529AE0C003881F6 /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773157D2529AE0C003881F6 /* RefreshControl.swift */; };
 		D7743DCA25283BA800F7C852 /* AjmoTodayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DC925283BA800F7C852 /* AjmoTodayModel.swift */; };
 		D7743DCE2528424200F7C852 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DCD2528424200F7C852 /* BaseModel.swift */; };
 		D7743DD7252877F900F7C852 /* TodayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DD6252877F900F7C852 /* TodayHeaderView.swift */; };
@@ -16,19 +19,17 @@
 		D7743DE025288E9A00F7C852 /* TodayCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */; };
 		D7743DE225288FF900F7C852 /* TodayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7743DE125288FF900F7C852 /* TodayCardView.swift */; };
 		D7743DE42528900F00F7C852 /* TodayCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7743DE32528900F00F7C852 /* TodayCardView.xib */; };
+		D796117B2529568200E7FEAE /* TodayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796117A2529568200E7FEAE /* TodayDetailViewController.swift */; };
 		D7BACE532524593E006F70DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE522524593E006F70DC /* AppDelegate.swift */; };
 		D7BACE572524593E006F70DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE562524593E006F70DC /* MainViewController.swift */; };
 		D7BACE5A2524593E006F70DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE582524593E006F70DC /* Main.storyboard */; };
 		D7BACE5C25245941006F70DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE5B25245941006F70DC /* Assets.xcassets */; };
 		D7BACE5F25245941006F70DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BACE5D25245941006F70DC /* LaunchScreen.storyboard */; };
 		D7BACE7025245CE9006F70DC /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE6C25245CE9006F70DC /* SceneManager.swift */; };
-		D7BACE7125245CE9006F70DC /* AlertViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE6D25245CE9006F70DC /* AlertViewManager.swift */; };
 		D7BACE7225245CE9006F70DC /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE6E25245CE9006F70DC /* ColorManager.swift */; };
-		D7BACE7F25245E5E006F70DC /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7525245E5E006F70DC /* StringExt.swift */; };
 		D7BACE8025245E5E006F70DC /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7625245E5E006F70DC /* UIViewExt.swift */; };
 		D7BACE8125245E5E006F70DC /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7725245E5E006F70DC /* UIViewControllerExt.swift */; };
 		D7BACE8325245E5E006F70DC /* NSDateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7925245E5E006F70DC /* NSDateExt.swift */; };
-		D7BACE8425245E5E006F70DC /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7A25245E5E006F70DC /* UIImageExt.swift */; };
 		D7BACE8525245E5E006F70DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7C25245E5E006F70DC /* Constants.swift */; };
 		D7BACE8625245E5E006F70DC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7D25245E5E006F70DC /* Utils.swift */; };
 		D7BACE8725245E5E006F70DC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BACE7E25245E5E006F70DC /* Configuration.swift */; };
@@ -40,6 +41,9 @@
 		7234039E953E675BAC04E505 /* Pods-AjmoDashboardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AjmoDashboardDemo.release.xcconfig"; path = "Target Support Files/Pods-AjmoDashboardDemo/Pods-AjmoDashboardDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C6DB447F4B106BA4CC523C69 /* Pods-AjmoDashboardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AjmoDashboardDemo.debug.xcconfig"; path = "Target Support Files/Pods-AjmoDashboardDemo/Pods-AjmoDashboardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D1684502CFE0A6E72BEBDC7E /* Pods_AjmoDashboardDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AjmoDashboardDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74E0B3525295E310090B2C1 /* DiscoverHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHeaderView.swift; sourceTree = "<group>"; };
+		D74E0B3725295E460090B2C1 /* DiscoverHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverHeaderView.xib; sourceTree = "<group>"; };
+		D773157D2529AE0C003881F6 /* RefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
 		D7743DC925283BA800F7C852 /* AjmoTodayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjmoTodayModel.swift; sourceTree = "<group>"; };
 		D7743DCD2528424200F7C852 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		D7743DD6252877F900F7C852 /* TodayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeaderView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayCardViewCell.xib; sourceTree = "<group>"; };
 		D7743DE125288FF900F7C852 /* TodayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCardView.swift; sourceTree = "<group>"; };
 		D7743DE32528900F00F7C852 /* TodayCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayCardView.xib; sourceTree = "<group>"; };
+		D796117A2529568200E7FEAE /* TodayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDetailViewController.swift; sourceTree = "<group>"; };
 		D7BACE4F2524593E006F70DC /* AjmoDashboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AjmoDashboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BACE522524593E006F70DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7BACE562524593E006F70DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +61,10 @@
 		D7BACE5E25245941006F70DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7BACE6025245941006F70DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7BACE6C25245CE9006F70DC /* SceneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
-		D7BACE6D25245CE9006F70DC /* AlertViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewManager.swift; sourceTree = "<group>"; };
 		D7BACE6E25245CE9006F70DC /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
-		D7BACE7525245E5E006F70DC /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		D7BACE7625245E5E006F70DC /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		D7BACE7725245E5E006F70DC /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		D7BACE7925245E5E006F70DC /* NSDateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExt.swift; sourceTree = "<group>"; };
-		D7BACE7A25245E5E006F70DC /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		D7BACE7C25245E5E006F70DC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D7BACE7D25245E5E006F70DC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D7BACE7E25245E5E006F70DC /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -99,6 +101,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D773157C2529ADDE003881F6 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				D773157D2529AE0C003881F6 /* RefreshControl.swift */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		D773157F2529B21E003881F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7743DDD25288E9A00F7C852 /* TodayCardViewCell.swift */,
+				D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D7743DC825283B6B00F7C852 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,9 +130,9 @@
 		D7743DCF2528720F00F7C852 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D773157F2529B21E003881F6 /* Cell */,
 				D7BACE562524593E006F70DC /* MainViewController.swift */,
-				D7743DDD25288E9A00F7C852 /* TodayCardViewCell.swift */,
-				D7743DDE25288E9A00F7C852 /* TodayCardViewCell.xib */,
+				D796117A2529568200E7FEAE /* TodayDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -158,6 +177,7 @@
 		D7BACE512524593E006F70DC /* AjmoDashboardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D773157C2529ADDE003881F6 /* CustomControl */,
 				D7743DC825283B6B00F7C852 /* Models */,
 				D7743DD02528726800F7C852 /* AppDelegate */,
 				D7743DCF2528720F00F7C852 /* ViewControllers */,
@@ -177,6 +197,8 @@
 				D7743DD82528781600F7C852 /* TodayHeaderView.xib */,
 				D7743DE125288FF900F7C852 /* TodayCardView.swift */,
 				D7743DE32528900F00F7C852 /* TodayCardView.xib */,
+				D74E0B3525295E310090B2C1 /* DiscoverHeaderView.swift */,
+				D74E0B3725295E460090B2C1 /* DiscoverHeaderView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -186,7 +208,6 @@
 			children = (
 				D7BACE8825246710006F70DC /* ApiManager.swift */,
 				D7BACE8925246710006F70DC /* NetworkManager.swift */,
-				D7BACE6D25245CE9006F70DC /* AlertViewManager.swift */,
 				D7BACE6E25245CE9006F70DC /* ColorManager.swift */,
 				D7BACE6C25245CE9006F70DC /* SceneManager.swift */,
 			);
@@ -196,11 +217,9 @@
 		D7BACE7425245E5D006F70DC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D7BACE7525245E5E006F70DC /* StringExt.swift */,
 				D7BACE7625245E5E006F70DC /* UIViewExt.swift */,
 				D7BACE7725245E5E006F70DC /* UIViewControllerExt.swift */,
 				D7BACE7925245E5E006F70DC /* NSDateExt.swift */,
-				D7BACE7A25245E5E006F70DC /* UIImageExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -280,6 +299,7 @@
 				D7743DE42528900F00F7C852 /* TodayCardView.xib in Resources */,
 				D7BACE5C25245941006F70DC /* Assets.xcassets in Resources */,
 				D7743DE025288E9A00F7C852 /* TodayCardViewCell.xib in Resources */,
+				D74E0B3825295E460090B2C1 /* DiscoverHeaderView.xib in Resources */,
 				D7BACE5A2524593E006F70DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,18 +359,18 @@
 				D7BACE572524593E006F70DC /* MainViewController.swift in Sources */,
 				D7BACE8125245E5E006F70DC /* UIViewControllerExt.swift in Sources */,
 				D7BACE8325245E5E006F70DC /* NSDateExt.swift in Sources */,
+				D74E0B3625295E310090B2C1 /* DiscoverHeaderView.swift in Sources */,
 				D7BACE8625245E5E006F70DC /* Utils.swift in Sources */,
 				D7BACE7225245CE9006F70DC /* ColorManager.swift in Sources */,
+				D773157E2529AE0C003881F6 /* RefreshControl.swift in Sources */,
 				D7BACE7025245CE9006F70DC /* SceneManager.swift in Sources */,
 				D7743DE225288FF900F7C852 /* TodayCardView.swift in Sources */,
 				D7BACE532524593E006F70DC /* AppDelegate.swift in Sources */,
-				D7BACE7F25245E5E006F70DC /* StringExt.swift in Sources */,
 				D7743DCE2528424200F7C852 /* BaseModel.swift in Sources */,
+				D796117B2529568200E7FEAE /* TodayDetailViewController.swift in Sources */,
 				D7BACE8A25246710006F70DC /* ApiManager.swift in Sources */,
-				D7BACE7125245CE9006F70DC /* AlertViewManager.swift in Sources */,
 				D7743DD7252877F900F7C852 /* TodayHeaderView.swift in Sources */,
 				D7BACE8B25246710006F70DC /* NetworkManager.swift in Sources */,
-				D7BACE8425245E5E006F70DC /* UIImageExt.swift in Sources */,
 				D7BACE8525245E5E006F70DC /* Constants.swift in Sources */,
 				D7743DDF25288E9A00F7C852 /* TodayCardViewCell.swift in Sources */,
 			);

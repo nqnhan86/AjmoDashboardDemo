@@ -16,6 +16,12 @@ enum TransitionType {
 
 struct SceneManager {
     
+    static func navigateToTodayDetailScene(_ data: AjmoTodayModel, navigationController: UINavigationController) {
+        let vc = Utils.controllerFromStoryboard("Main", id: "TodayDetailViewController") as! TodayDetailViewController
+        vc.todayEvent = data
+        self.show(viewController: vc, with: .push, navigationController: navigationController)
+    }
+    
     //COMMON FUNCTION
     static func show(viewController: UIViewController, with transitionType: TransitionType, navigationController: UINavigationController) {
         switch transitionType {

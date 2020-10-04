@@ -6,6 +6,7 @@ PODS:
     - Mantle/extobjc (= 2.1.1)
   - Mantle/extobjc (2.1.1)
   - MBProgressHUD (1.0.0)
+  - ParallaxHeader (3.0.0)
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift (~> 6.0.4)
   - Mantle
   - MBProgressHUD (~> 1.0.0)
+  - ParallaxHeader (~> 3.0.0)
   - SDWebImage
 
 SPEC REPOS:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Mantle
     - MBProgressHUD
+    - ParallaxHeader
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -33,8 +36,9 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: 4d0cfac6a5ec5b50765c8be1a3164c2c5e6878b7
+PODFILE CHECKSUM: 0f9db703b28581763d57811108280bb7de6011cf
 
 COCOAPODS: 1.9.3

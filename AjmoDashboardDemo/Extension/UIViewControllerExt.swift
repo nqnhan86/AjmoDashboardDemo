@@ -34,10 +34,6 @@ extension UINavigationController {
 }
 
 extension UIViewController{
-    func setStatusBarHidden(isHidden: Bool) {
-            UIApplication.shared.isStatusBarHidden = isHidden
-    }
-    
     func addChildVC(childVC: UIViewController, containerView: UIView){
         self.addChild(childVC)
         

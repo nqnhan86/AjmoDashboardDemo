@@ -68,4 +68,10 @@ extension TodayCardViewCell: iCarouselDataSource, iCarouselDelegate {
         
         return value
     }
+    
+    func carousel(_ carousel: iCarousel, didSelectItemAt index: Int) {
+        if let topVC = UIApplication.topViewController() {
+            SceneManager.navigateToTodayDetailScene(self.items[index], navigationController: topVC.navigationController!)
+        }
+    }
 }
